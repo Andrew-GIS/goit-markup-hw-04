@@ -50,8 +50,10 @@ img {
   --portfoilio-border-color: #eeeeee;
   --footer-address-color: rgba(255, 255, 255, 0.6);
   --border-header-color: #ececec;
+  --client-light-color: #afb1b8;
   --box-shadow-color: rgba(0, 0, 0, 0.15);
   --hero-gradient-color: rgba(47, 48, 58, 0.4);
+  --soc-link-background: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -412,7 +414,7 @@ body {
 .link-item {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+  fill: var(--client-light-color);
   align-items: center;
 }
 
@@ -421,7 +423,6 @@ body {
   background-color: var(--accent-color);
 }
 
-/*--work--*/
 .soc-link-member:hover .link-item,
 .soc-link-member:focus .link-item {
   fill: var(--main-light-color);
@@ -432,7 +433,7 @@ body {
   font-size: 36px;
   line-height: 42px;
   text-align: center;
-  color: #212121;
+  color: var(--main-dark-color);
   margin-bottom: 50px;
 }
 
@@ -443,9 +444,8 @@ body {
 
 .client-item {
   width: 170px;
-  /* height: 92px; */
   padding: 16px 32px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--client-light-color);
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -457,7 +457,7 @@ body {
 .client-item-logo {
   width: 106px;
   height: 60px;
-  fill: #afb1b8;
+  fill: var(--client-light-color);
   align-items: center;
 }
 
@@ -635,7 +635,7 @@ body {
   height: 44px;
   border-radius: 50%;
   padding: 12px;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--soc-link-background);
 }
 
 .link-item-footer {
